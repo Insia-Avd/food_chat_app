@@ -1,6 +1,6 @@
 Food Recipe Chatbot
 A conversational Streamlit web app that lets you search for food recipes by natural language chat, using semantic search and AI!
-Just tell the bot what you’re craving ("5 mins cook time north indian main course", "quick healthy pasta", "snacks with mushrooms"), and get smart recommendations with detailed nutrition and cooking times.
+Just tell the bot what you’re craving ("quick healthy pasta", "snacks with mushrooms"), and get smart recommendations with detailed nutrition and cooking times.
 
 
 🚀 Features
