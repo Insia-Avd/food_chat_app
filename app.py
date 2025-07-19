@@ -10,7 +10,7 @@ st.markdown("""
     </h1>
     <p style='text-align:center; color:#444; font-size:1.2em; margin-bottom:25px;'>
         Tell me what you're in the mood for. I’ll suggest the best recipes from my collection.<br>
-        Try: <em>5 mins breakfast</em>, <em>low carb pasta</em>, <em>North Indian curry</em>, or <em>snacks with paneer</em>!
+        Try:<em>low carb pasta</em>, <em>North Indian curry</em>, or <em>snacks with paneer</em>!
     </p>
 """, unsafe_allow_html=True)
 
@@ -56,11 +56,11 @@ if user_input:
         else:
             filtered.append(rec)
 
-    final_results = filtered if filtered else raw_results[:3]
+    final_results = filtered if filtered else raw_results[:2]
 
     if final_results:
         messages = []
-        for idx, result in enumerate(final_results[:3]):
+        for idx, result in enumerate(final_results[:2]):
             details = get_recipe_details(result)
             cook_time_line = ""
             times_lines = details['times'].splitlines()
