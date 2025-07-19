@@ -4,6 +4,15 @@ from data_preprocessing import load_and_preprocess_data, get_recipe_details
 from ai_matcher import RecipeMatcher
 
 st.set_page_config(page_title="Food Recipe Chat", layout="wide")
+st.markdown("""
+    <h1 style='text-align:center; color:#ff7043; font-size:2.5em;'>
+        🍽️ Chat & Discover Delicious Recipes Instantly!
+    </h1>
+    <p style='text-align:center; color:#444; font-size:1.2em; margin-bottom:25px;'>
+        Tell me what you're in the mood for. I’ll suggest the best recipes from my collection.<br>
+        Try: <em>5 mins breakfast</em>, <em>low carb pasta</em>, <em>North Indian curry</em>, or <em>snacks with paneer</em>!
+    </p>
+""", unsafe_allow_html=True)
 
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
