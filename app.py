@@ -10,7 +10,7 @@ if 'chat_history' not in st.session_state:
 
 @st.cache_data
 def load_data():
-    return load_and_preprocess_data('data/food_data.csv')
+    return load_and_preprocess_data('food_data.csv')
 
 df = load_data()
 matcher = RecipeMatcher(df)
